@@ -11,6 +11,9 @@ const app: Application = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Routes
+app.use("/", apiRouter);
+
 // CORS
 app.use(cors());
 
